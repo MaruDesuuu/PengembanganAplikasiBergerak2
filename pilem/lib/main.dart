@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pilem/screens/detail_screen.dart';
+import 'package:pilem/screens/favorite_screen.dart';
 import 'package:pilem/screens/home_screen.dart';
+import 'package:pilem/screens/main_screen.dart';
+import 'package:pilem/screens/search_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +22,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const MainScreen(),
     );
   }
 }
+
