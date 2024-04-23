@@ -1,16 +1,17 @@
-import 'package:daftar_belanja/services/shopping_service.dart';
+import 'package:daftar_belanja2/screens/form_belanja_service.dart';
+import 'package:daftar_belanja2/services/belanja_service.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
-class ShoppingListScreen extends StatefulWidget {
-  const ShoppingListScreen({super.key});
+class ListBelanja extends StatefulWidget {
+  const ListBelanja({super.key});
 
   @override
-  State<ShoppingListScreen> createState() => _ShoppingListScreenState();
+  State<ListBelanja> createState() => _ListBelanjaState();
 }
 
-class _ShoppingListScreenState extends State<ShoppingListScreen> {
-  final TextEditingController _controller = TextEditingController();
-  final ShoppingService _shoppingService = ShoppingService();
+class _ListBelanjaState extends State<ListBelanja> {
+  final BelanjaService _shoppingService = BelanjaService();
 
   @override
   Widget build(BuildContext context) {
@@ -20,27 +21,6 @@ class _ShoppingListScreenState extends State<ShoppingListScreen> {
       ),
       body: Column(
         children: [
-          Padding(
-            padding: EdgeInsets.all(10),
-            child: Row(
-              children: [
-                Expanded(
-                  child: TextField(
-                    controller: _controller,
-                    decoration:
-                        const InputDecoration(hintText: 'Masukkan nama barang'),
-                  ),
-                ),
-                IconButton(
-                  icon: const Icon(Icons.add),
-                  onPressed: () {
-                    _shoppingService.addShoppingItem(_controller.text);
-                    _controller.clear();
-                  },
-                )
-              ],
-            ),
-          ),
           Expanded(
             child: StreamBuilder<Map<String, String>>(
               stream: _shoppingService.getShoppingList(),
@@ -70,7 +50,17 @@ class _ShoppingListScreenState extends State<ShoppingListScreen> {
                 }
               },
             ),
-          )
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (context) => const FormBelanja()));
+              },
+              child: const Text("Tambah Daftar Belanja"),
+            ),
+          ),
         ],
       ),
     );

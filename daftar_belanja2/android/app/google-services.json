@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "491535648238",
+    "firebase_url": "https://belanja-app-53b12-default-rtdb.firebaseio.com",
+    "project_id": "belanja-app-53b12",
+    "storage_bucket": "belanja-app-53b12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491535648238:android:f73755c7d120b8c0987aff",
+        "android_client_info": {
+          "package_name": "com.example.daftar_belanja2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwYi5kKWLStiM6dujmDja50QKTZJSsN0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
