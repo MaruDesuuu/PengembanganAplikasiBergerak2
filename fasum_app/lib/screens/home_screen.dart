@@ -1,3 +1,4 @@
+import 'package:fasum_app/screens/add_post_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fasum_app/screens/sign_in_screen.dart';
@@ -39,8 +40,19 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: const Center(
-        child: Text('You have logged In'),
+      body: Center(
+        child: SizedBox(
+          width: 200,
+          height: 50,
+          child: FloatingActionButton(
+            onPressed: () {
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => AddPostScreen()),
+              );
+            },
+            child: const Icon(Icons.add),
+          ),
+        ),
       ),
     );
   }

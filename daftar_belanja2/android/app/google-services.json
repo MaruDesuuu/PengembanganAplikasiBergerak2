@@ -1,14 +1,33 @@
 {
   "project_info": {
-    "project_number": "491535648238",
-    "firebase_url": "https://belanja-app-53b12-default-rtdb.firebaseio.com",
-    "project_id": "belanja-app-53b12",
-    "storage_bucket": "belanja-app-53b12.appspot.com"
+    "project_number": "45671191778",
+    "firebase_url": "https://test-daftar-belanja-default-rtdb.firebaseio.com",
+    "project_id": "test-daftar-belanja",
+    "storage_bucket": "test-daftar-belanja.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:491535648238:android:f73755c7d120b8c0987aff",
+        "mobilesdk_app_id": "1:45671191778:android:a8daac767859d55049fabb",
+        "android_client_info": {
+          "package_name": "com.example.daftar_belanja"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB21Xrx7JOvyNEANVbInCVC8DyG30WMeiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45671191778:android:79ca70afd5f81a5e49fabb",
         "android_client_info": {
           "package_name": "com.example.daftar_belanja2"
         }
@@ -16,7 +35,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAwYi5kKWLStiM6dujmDja50QKTZJSsN0U"
+          "current_key": "AIzaSyB21Xrx7JOvyNEANVbInCVC8DyG30WMeiM"
         }
       ],
       "services": {
