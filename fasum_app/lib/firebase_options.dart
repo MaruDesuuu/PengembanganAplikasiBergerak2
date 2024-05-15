@@ -44,38 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAZuW47iRHxNr5V6vZTIGDLBLRDa9Hox2w',
-    appId: '1:37974253661:web:10fc212f7e5d81b01a6db4',
-    messagingSenderId: '37974253661',
-    projectId: 'fasum-app-6f46a',
-    authDomain: 'fasum-app-6f46a.firebaseapp.com',
-    storageBucket: 'fasum-app-6f46a.appspot.com',
-    measurementId: 'G-2M2RZWKLPP',
+    apiKey: 'AIzaSyCxqlQf3EOFwFWEN3VYDczd1MIgQUJ6JDA',
+    appId: '1:248299501294:web:656460b4d0fe0363b2e5ff',
+    messagingSenderId: '248299501294',
+    projectId: 'tutorialfirebase-5e507',
+    authDomain: 'tutorialfirebase-5e507.firebaseapp.com',
+    storageBucket: 'tutorialfirebase-5e507.appspot.com',
+    measurementId: 'G-9MFY3EQ1YY',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCErVpybZi_wztVBosuMPZLvwkTrA9nxTc',
-    appId: '1:37974253661:android:51fabdc2e91b76791a6db4',
-    messagingSenderId: '37974253661',
-    projectId: 'fasum-app-6f46a',
-    storageBucket: 'fasum-app-6f46a.appspot.com',
+    apiKey: 'AIzaSyCtlOSz6V6aXa707hZ5OHonOPcHSs0u4U4',
+    appId: '1:248299501294:android:843a02937d7ca90ab2e5ff',
+    messagingSenderId: '248299501294',
+    projectId: 'tutorialfirebase-5e507',
+    storageBucket: 'tutorialfirebase-5e507.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCT0BhXVmBGyHgjNoQ_6cUFnMSQoSg-yFE',
-    appId: '1:37974253661:ios:0dc66e92a740d3e31a6db4',
-    messagingSenderId: '37974253661',
-    projectId: 'fasum-app-6f46a',
-    storageBucket: 'fasum-app-6f46a.appspot.com',
+    apiKey: 'AIzaSyC3kWS0FqPEHPIX4P7Vpu11v2gNTQqSgKw',
+    appId: '1:248299501294:ios:4d886317fd88f48fb2e5ff',
+    messagingSenderId: '248299501294',
+    projectId: 'tutorialfirebase-5e507',
+    storageBucket: 'tutorialfirebase-5e507.appspot.com',
     iosBundleId: 'com.example.fasumApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCT0BhXVmBGyHgjNoQ_6cUFnMSQoSg-yFE',
-    appId: '1:37974253661:ios:6852969f2cb567fd1a6db4',
-    messagingSenderId: '37974253661',
-    projectId: 'fasum-app-6f46a',
-    storageBucket: 'fasum-app-6f46a.appspot.com',
+    apiKey: 'AIzaSyC3kWS0FqPEHPIX4P7Vpu11v2gNTQqSgKw',
+    appId: '1:248299501294:ios:77ebc38e1a033607b2e5ff',
+    messagingSenderId: '248299501294',
+    projectId: 'tutorialfirebase-5e507',
+    storageBucket: 'tutorialfirebase-5e507.appspot.com',
     iosBundleId: 'com.example.fasumApp.RunnerTests',
   );
 }
