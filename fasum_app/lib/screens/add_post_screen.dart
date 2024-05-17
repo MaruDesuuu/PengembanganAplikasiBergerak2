@@ -3,8 +3,7 @@ import 'dart:io';
 import 'package:camera/camera.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fasum_app/screens/home_screen.dart';
-import 'package:fasum_app/services/camera.dart';
-import 'package:fasum_app/services/firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -19,8 +18,8 @@ class AddPostScreen extends StatefulWidget {
 }
 
 class _AddPostScreenState extends State<AddPostScreen> {
+  final User? _user = FirebaseAuth.instance.currentUser;
   final TextEditingController _description = TextEditingController();
-  final FirestoreService firestoreService = FirestoreService();
   final ImagePicker _picker = ImagePicker();
   GlobalKey<FormState> key = GlobalKey();
   XFile? _image;
@@ -109,6 +108,8 @@ class _AddPostScreenState extends State<AddPostScreen> {
                   await reference.add({
                     'description' : _description.text,
                     'image': imageUrl,
+                    'timestamp' : Timestamp.now(),
+                    'email' : _user?.email,
                   });
                 } catch (error) {
                   ScaffoldMessenger.of(context).showSnackBar(
